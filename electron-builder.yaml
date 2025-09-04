@@ -57,10 +57,8 @@ deb:
   packageCategory: x11
   depends: ["libnotify4", "libayatana-appindicator3-1", "libxtst6", "libnss3", "rtimucli", "sense-emu-tools"]
   priority: extra
+  compression: gz # use Gzip rather than the default xz due to perf issues with older Pi devices
   description: Electron build of Scratch 3 offline
-    Scratch 3.0 is the third and current major version of Scratch. Released on 
-    January 2, 2019, it's a complete redesign and reimplementation of Scratch 
+    Scratch 3.0 is the third and current major version of Scratch. Released on
+    January 2, 2019, it's a complete redesign and reimplementation of Scratch
     written in HTML5 and JavaScript.
-
-
-
