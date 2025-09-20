@@ -1277,9 +1277,9 @@ index 0000000..7db91a0
 +            fs.readSync (fd, data, 0, 56, 0);
 +            fs.closeSync (fd);
 +            const view = new DataView (data.buffer, 0, 56);
-+            x = Number (view.getInt16 (32, true) * 8 / 32768);
-+            y = Number (view.getInt16 (34, true) * 8 / 32768);
-+            z = Number (view.getInt16 (36, true) * 8 / 32768);
++            x = Number (view.getInt16 (29, true) * 8 / 32768);
++            y = Number (view.getInt16 (31, true) * 8 / 32768);
++            z = Number (view.getInt16 (33, true) * 8 / 32768);
 +        }
 +        else
 +        {
@@ -1316,8 +1316,8 @@ index 0000000..7db91a0
 +            fs.readSync (fd, data, 0, 56, 0);
 +            fs.closeSync (fd);
 +            const view = new DataView (data.buffer, 0, 56);
-+            x = view.getInt16 (50, true) * 360 / 32768;
-+            y = view.getInt16 (52, true) * 360 / 32768;
++            x = view.getInt16 (47, true) * 360 / 32768;
++            y = view.getInt16 (49, true) * 360 / 32768;
 +        }
 +        else
 +        {
